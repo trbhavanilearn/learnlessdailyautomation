@@ -8,8 +8,8 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify Homepage Loadtime ")
 @allure.title("Validate Homepage loading Time")
 @pytest.mark.sanity
-def test_page_load_time(page,pytestconfig):
-    base_url=pytestconfig.getini(base_url)
+def test_page_load_time(page,base_url):
+    #base_url=pytestconfig.getini(base_url)
     start = time.time()
     page.goto(base_url)
     end = time.time()

@@ -7,8 +7,8 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify Broken Image ")
 @allure.title("Validate Broken Image")
 @pytest.mark.regression
-def test_no_broken_images(page,pytestconfig):
-    base_url=pytestconfig.getini(base_url)
+def test_no_broken_images(page,base_url):
+    #base_url=pytestconfig.getini(base_url)
     page.goto(base_url)
     images = page.locator("img")
     count = images.count()

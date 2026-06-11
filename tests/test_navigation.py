@@ -8,8 +8,8 @@ from config import BASE_URL, PASSWORD
 @allure.feature("Webpage open")
 @allure.story("Verify the naviation links up and running is up and running")
 @pytest.mark.smoke
-def test_navigation_menu(page,pytestconfig):
-    base_url=pytestconfig.getini(base_url)
+def test_navigation_menu(page,base_url):
+    #base_url=pytestconfig.getini(base_url)
     page.goto(base_url)
     menu_links = page.locator("nav a")
     count = menu_links.count()

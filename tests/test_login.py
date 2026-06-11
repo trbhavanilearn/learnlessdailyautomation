@@ -10,7 +10,7 @@ from config import BASE_URL, PASSWORD
 @pytest.mark.smoke
 @pytest.mark.regression
 @allure.title("Validate Homepage")
-def test_homepage(pytestconfig):
+def test_homepage(base_url):
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=False  # True = hidden browser, False = visible browser
@@ -18,7 +18,7 @@ def test_homepage(pytestconfig):
         page = browser.new_page()
         login = LoginPage(page)
         print("LoginPage object created")
-        base_url=pytestconfig.getini(base_url)
+        #base_url=pytestconfig.getini(base_url)
         login.navigate(base_url)
         assert login.get_title()!=""
         #page.goto(BASE_URL)

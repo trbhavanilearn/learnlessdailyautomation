@@ -7,8 +7,8 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify all Social links are working")
 @allure.title("Validate all social links working")
 @pytest.mark.regression
-def test_social_media_links(page,pytestconfig):
-    base_url=pytestconfig.getini(base_url)
+def test_social_media_links(page,base_url):
+    #base_url=pytestconfig.getini(base_url)
     page.goto(base_url)
     links = page.locator("a")
     count = links.count()

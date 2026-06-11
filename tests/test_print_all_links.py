@@ -10,9 +10,9 @@ from config import BASE_URL, PASSWORD
 @allure.title("Validate all links working")
 @pytest.mark.smoke
 @pytest.mark.regression
-def test_print_all_links(page,pytestconfig):
+def test_print_all_links(page,base_url):
 
-    base_url = pytestconfig.getini(base_url)
+    #base_url = pytestconfig.getini(base_url)
 
     allure.dynamic.title("Validate All Links on LearnLessDaily Homepage")
 
