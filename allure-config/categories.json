@@ -1,0 +1,14 @@
+[
+  {
+    "name": "UI Failures",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Broken Links",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Network Issues",
+    "matchedStatuses": ["failed"]
+  }
+]

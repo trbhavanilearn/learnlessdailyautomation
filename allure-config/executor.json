@@ -1,0 +1,9 @@
+{
+  "name": "LearnLessDaily Automation",
+  "type": "Playwright",
+  "buildName": "Smoke Suite Execution",
+  "buildOrder": "1",
+  "buildUrl": "https://github.com/trbhavanilearn/learnlessdailyautomation",
+  "reportUrl": "http://localhost",
+  "reportName": "LearnLessDaily Smoke Report"
+}

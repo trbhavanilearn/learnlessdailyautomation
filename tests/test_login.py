@@ -9,8 +9,8 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify the website is up and running")
 @pytest.mark.smoke
 @pytest.mark.regression
-@allure.title("Validate Login")
-def test_valid_users():
+@allure.title("Validate Homepage")
+def test_homepage():
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=False  # True = hidden browser, False = visible browser
@@ -18,6 +18,8 @@ def test_valid_users():
         page = browser.new_page()
         login = LoginPage(page)
         print("LoginPage object created")
-        page.goto(BASE_URL)
+        login.navigate(BASE_URL)
+        assert login.get_title()!=""
+        #page.goto(BASE_URL)
         # Login actions here
-        browser.close()
+        #browser.close()

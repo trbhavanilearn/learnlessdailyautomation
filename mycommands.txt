@@ -1,0 +1,29 @@
+    1  ls
+    2  clear
+    3  sed
+    4  clear
+    5  ls
+    6  clear
+    7  clear
+    8  exite
+    9  exit
+   10  pytest -v
+   11  playwright show-trace traces/trace.zip
+   12  pytest  --alluredir=reports/allure-results
+   13  allure serve reports/allure-results
+   14  allure serve reports/allure-results
+   15  pytest -v
+   16  pytest --alluredir=reports/allure-results
+   17  allure serve reports/allure-results
+   18  playwright show-trace traces/trace.zip
+   19  pytest -m smoke --alluredir=reports/allure-results
+   20  pytest -m smoke --broser chromium \--alluredir=reports/allure-results
+   21  pytest -m smoke --broser chromium --alluredir=reports/allure-results
+   22  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   23  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   24  allure serve reports/allure-results
+   25  playwright show-trace traces/trace.zip
+   26  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   27  allure serve reports/allure-results
+   28  history
+   29  history > mycommands.txt
