@@ -1,5 +1,0 @@
-Link 1 | Text='Join Program' | URL='#pricing' | ERROR=Invalid URL '#pricing': No scheme supplied. Perhaps you meant https://#pricing?
-Link 2 | Text='Join Next Batch' | URL='https://chat.whatsapp.com/FKWOktRs9be8M5hL28APGT?mode=gi_t' | Status=200 | WORKING ✅
-Link 3 | Text='View Curriculum' | URL='https://chat.whatsapp.com/FKWOktRs9be8M5hL28APGT?mode=gi_t' | Status=429 | BROKEN ❌
-Link 4 | Text='Apply Now' | URL='https://chat.whatsapp.com/FKWOktRs9be8M5hL28APGT?mode=gi_t' | Status=429 | BROKEN ❌
-Link 5 | Text='Book Free Demo' | URL='https://chat.whatsapp.com/FKWOktRs9be8M5hL28APGT?mode=gi_t' | Status=429 | BROKEN ❌
