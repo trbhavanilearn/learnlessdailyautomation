@@ -5,6 +5,10 @@ import shutil
 
 sys.path.insert(0, os.path.abspath("."))
 
+@pytest.fixture(scope="session")
+def base_url(pytestconfig):
+    return pytestconfig.getini("base_url")
+
 @pytest.fixture(scope="function")
 def context(browser):
     # Create browser context and enable video recording
