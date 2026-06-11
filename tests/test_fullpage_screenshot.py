@@ -21,12 +21,8 @@ def test_full_page_screenshot(page,base_url):
     )
     screenshot = page.screenshot(full_page=True)
     allure.attach(
-    screenshot,
-    name="Homepage Screenshot",
-    attachment_type=allure.attachment_type.PNG
-   )
-   """ allure.attach.file(
-        "screenshots/homepage_full.png",
-        name="Homepage Full Screenshot",
-        attachment_type=allure.attachment_type.PNG
-    )"""
+        screenshot,
+     name="Homepage Screenshot",
+     attachment_type=allure.attachment_type.PNG
+    )
+   

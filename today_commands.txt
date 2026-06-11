@@ -1,0 +1,87 @@
+    1  ls
+    2  clear
+    3  sed
+    4  clear
+    5  ls
+    6  clear
+    7  clear
+    8  exite
+    9  exit
+   10  pytest -v
+   11  playwright show-trace traces/trace.zip
+   12  pytest  --alluredir=reports/allure-results
+   13  allure serve reports/allure-results
+   14  allure serve reports/allure-results
+   15  pytest -v
+   16  pytest --alluredir=reports/allure-results
+   17  allure serve reports/allure-results
+   18  playwright show-trace traces/trace.zip
+   19  pytest -m smoke --alluredir=reports/allure-results
+   20  pytest -m smoke --broser chromium \--alluredir=reports/allure-results
+   21  pytest -m smoke --broser chromium --alluredir=reports/allure-results
+   22  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   23  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   24  allure serve reports/allure-results
+   25  playwright show-trace traces/trace.zip
+   26  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   27  allure serve reports/allure-results
+   28  history
+   29  history > mycommands.txt
+   30  rmdir /s /q reports\allure-results
+   31  pwd
+   32  rm -rf reports/allure-results
+   33  mkdir -p reports/allure-results
+   34  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   35  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   36  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   37  allure generate reports/allure-results --clean -o reports/allure-report
+   38  allure open reports/allure-report
+   39  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   40  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   41  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   42  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   43  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   44  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   45  pytest -m smoke --browser chromium --alluredir=reports/allure-results --clean
+   46  sh run_smoke.sh
+   47  sh run_smoke.sh
+   48  rm -rf reports/allure-results
+   49  rm -rf reports/allure-report
+   50  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   51  allure serve reports/allure-results
+   52  sh run_skoke
+   53  sh run_smoke.sh
+   54  git add .
+   55  git commit -m "add hourly github action"
+   56  git push
+   57  git add .
+   58  git commit -m "pytest.ini base_url update"
+   59  git push
+   60  git add .
+   61  git commit -m "pytest.ini update for all programs"
+   62  git push
+   63  git add .
+   64  git commit -m "base_url conftest.py is updated to handle like string"
+   65  git push
+   66  git add .
+   67  git commit -m "base_url conftest.py is updated to handle like string updated for all tests"
+   68  git push
+   69  allure generate reports/allure-results --clean -o reports/allure-report
+   70  allure open reports/allure-report
+   71* 
+   72  git rm -r --cached reports
+   73  git rm -r --cached screenshots
+   74  git rm -r --cached videos
+   75  git rm -r --cached traces
+   76  git status
+   77  git add .
+   78  git commit -m "remove allure reports and screenshots"
+   79  git push
+   80  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   81  allure generate reports/allure-results --clean -o reports/allure-report
+   82  allure open reports/allure-report
+   83  pytest -m smoke --browser chromium --alluredir=reports/allure-results
+   84  allure generate reports/allure-results --clean -o reports/allure-report
+   85  allure open reports/allure-report
+   86  history
+   87  history > today_commands.txt
