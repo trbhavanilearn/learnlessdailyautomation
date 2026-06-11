@@ -11,7 +11,6 @@ from config import BASE_URL, PASSWORD
 def test_homepage_response(page,pytestconfig):
     base_url=pytestconfig.getini("base_url")
     response = page.goto(base_url)
-
     assert response.status == 200
 
     print(response.status)

@@ -7,7 +7,8 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify the Buttons running")
 @allure.title("Button Validations")
 @pytest.mark.regression
-def test_validate_buttons(page):
+def test_validate_buttons(page,pytestconfig):
+    base_url=pytestconfig.getini(base_url)
     page.goto(BASE_URL)
     buttons = page.locator("button")
     count = buttons.count()

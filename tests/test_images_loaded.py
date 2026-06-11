@@ -7,8 +7,9 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify all Social links are working")
 @allure.title("Validate all social links working")
 @pytest.mark.regression
-def test_images_loaded(page):
-    page.goto(BASE_URL)
+def test_images_loaded(page,pytestconfig):
+    base_url=pytestconfig(base_url)
+    page.goto(base_url)
     images = page.locator("img")
     count = images.count()
     print(f"Images Found: {count}")

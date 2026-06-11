@@ -7,8 +7,8 @@ from config import BASE_URL, PASSWORD
 @allure.story("Verify Mobile View ")
 @allure.title("Validate Mobile View")
 @pytest.mark.regression
-def test_mobile_view(page):
-
+def test_mobile_view(page,pytestconfig):
+    base_url=pytestconfig.getini(base_url)
     page.set_viewport_size(
         {
             "width": 375,
@@ -16,7 +16,7 @@ def test_mobile_view(page):
         }
     )
 
-    page.goto(BASE_URL)
+    page.goto(base_url)
     page.screenshot(
         path="screenshots/mobile.png",
         full_page=True

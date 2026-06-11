@@ -10,13 +10,13 @@ from config import BASE_URL, PASSWORD
 @allure.title("Validate all links working")
 @pytest.mark.smoke
 @pytest.mark.regression
-def test_print_all_links(page):
+def test_print_all_links(page,pytestconfig):
 
-    #base_url = "https://learnlessdaily.com/"
+    base_url = pytestconfig.getini(base_url)
 
     allure.dynamic.title("Validate All Links on LearnLessDaily Homepage")
 
-    page.goto(BASE_URL)
+    page.goto(base_url)
     links = page.locator("a")
     count = links.count()
     print(f"\nTotal Links Found: {count}")

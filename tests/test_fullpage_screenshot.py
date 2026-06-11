@@ -10,10 +10,9 @@ from config import BASE_URL, PASSWORD
 @allure.title("Validate Fullpage screenshot visible")
 @pytest.mark.smoke
 @pytest.mark.regression
-def test_full_page_screenshot(page):
-
-    page.goto(BASE_URL)
-
+def test_full_page_screenshot(page,pytestconfig):
+    base_url=pytestconfig.getini(base_url)
+    page.goto(base_url)
     page.screenshot(
         path="screenshots/homepage_full.png",
         full_page=True
